@@ -1,4 +1,4 @@
-[![Buildstatus](https://travis-ci.com/edboffical/webdog.svg?branch=main)](https://travis-ci.com/edboffical/webdog.svg?branch=main)
+[![Buildstatus](https://travis-ci.com/edboffical/webdog.svg?branch=main)](https://travis-ci.com/edboffical/webdog)
 
 # Webdog - Lightweight and customizable web service
 
@@ -7,7 +7,7 @@ Webdog is a lightweight and customizable web service. It allows us to configure 
 
 ## Installation
 ### Download Releases
-Chick here [releases](https://github.com/edboffical/webdog/releases/) to download the executable file corressponding to your system
+Click here [releases](https://github.com/edboffical/webdog/releases/) to download the executable file corressponding to your system
 ### Building
 ```bash
 git clone https://github.com/edboffical/webdog

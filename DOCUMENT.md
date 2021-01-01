@@ -33,19 +33,19 @@ server:
 `mode` is used to specify the way that route configuration will be executed, currently `command` and `content` are supported
 
 ### command mode
-user's request and parameters will be forwarded via webdog to the script configured in `property`
+User's request and parameters will be forwarded via webdog to the script configured in `property`
 
-webdog will pass the parameters of the GET request and the POST **PostForm** data to the configuration script as **getopt** long parameters and expects the script to respond with the content configured in the `resp` field
+Webdog will pass the parameters of the GET request and the POST **PostForm** data to the configuration script as **getopt** long parameters and expects the script to respond with the content configured in the `resp` field
 
 In the reference configuration, if you request `/getInfo?name=callous&pass=123456`, the command that webdog finally gets the response is `sh. /resource/resp.sh --name=callous --pass=123456`
 
 The script must split the results according to the character of `split` when returning the results, such as **result 1｜result 2** , **{{index . 0}}** and **{{index .1}}** are fixed templates, the former will be filled by **result 1** and the latter will be filled by **result 2**.
 
 ### content mode
-webdog will process the user request as a file service，in the reference configuration, if you request `/static/index.html`, webdog will look for the corresponding resource in the path configured by `property`. So you will eventually to request `. /resource/static/index.html`. Relative and absolute paths can be configured in `property`.
+Webdog will process the user request as a file service，in the reference configuration, if you request `/static/index.html`, webdog will look for the corresponding resource in the path configured by `property`. So you will eventually to request `. /resource/static/index.html`. Relative and absolute paths can be configured in `property`.
 
 ### default mode
-if you do not specify `mode`, then webdog returns the content in `resp` with the given `type` as **Content-Type**.
+If you do not specify `mode`, then webdog returns the content in `resp` with the given `type` as **Content-Type**.
 
 ## Start Service
 Execute the webdog executable directly after configuring `config.yml` correctly
