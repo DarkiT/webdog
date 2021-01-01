@@ -1,3 +1,5 @@
+[![Buildstatus](https://travis-ci.com/edboffical/webdog.svg?branch=main)](https://travis-ci.com/edboffical/webdog.svg?branch=main)
+
 # webdog - 轻量自定义 web 服务
 
 ## 什么是 webdog？

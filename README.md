@@ -1,3 +1,5 @@
+[![Buildstatus](https://travis-ci.com/edboffical/webdog.svg?branch=main)](https://travis-ci.com/edboffical/webdog.svg?branch=main)
+
 # Webdog - Lightweight and customizable web service
 
 ## What is webdog？
