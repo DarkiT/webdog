@@ -39,7 +39,7 @@ webdog 会将 GET 请求的参数和 POST 的 **PostForm** 数据以 **getopt** 
 
 在参考配置中，如果你访问 `/getInfo?name=callous&pass=123456`，webdog 最终获取响应的命令即为 `sh ./resource/resp.sh --name=callous --pass=123456`
 
-脚本在返回结果的时必须按照 `split` 的字符进行结果的分割，如 **结果1｜结果2** ，`resp` 中 **{{index . 0}}** 和 **{{index .1}}**，是固定的模版写法，前者会被**结果1**填充，后者会被**结果2**填充。
+脚本在返回结果的时候必须按照 `split` 的字符进行结果的分割，如 **结果1｜结果2** ，`resp` 中 **{{index . 0}}** 和 **{{index .1}}**，是固定的模版写法，前者会被**结果1**填充，后者会被**结果2**填充。
 
 ### content 模式
 webdog 会将用户请求以文件服务的形式进行处理，在参考配置中，如果你访问 `/static/index.html` ，webdog 将会在 `property` 配置的路径中寻找对应资源。所以你最终将会访问到 `./resource/static/index.html`。`property` 中可以配置相对路径和绝对路径。
