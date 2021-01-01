@@ -1,0 +1,18 @@
+---
+normal:
+  "/getInfo":
+    mode: command
+    method: GET
+    split: "|"
+    type: application/json
+    property: "sh ./resource/resp.sh"
+    resp: '{"os":{{index . 0}}, "who":{{index . 1}}}'
+  "/getName":
+    type: text/html; charset=utf-8
+    resp: "webdog"
+  "/static/*filename":
+    mode: content
+    method: GET
+    property: "./resource"
+server:
+  port: 1995
