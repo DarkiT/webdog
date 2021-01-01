@@ -37,7 +37,7 @@ server:
 
 webdog 会将 GET 请求的参数和 POST 的 **PostForm** 数据以 **getopt** 长参数的形式传递给配置脚本，并期望脚本响应 `resp` 字段中配置的内容
 
-在参考配置中，如果你访问 `/getInfo?name=callous&pass=123456`，webdog 最终获取响应的脚本即为 `sh ./resource/resp.sh --name=callous --pass=123456`
+在参考配置中，如果你访问 `/getInfo?name=callous&pass=123456`，webdog 最终获取响应的命令即为 `sh ./resource/resp.sh --name=callous --pass=123456`
 
 脚本在返回结果的时必须按照 `split` 的字符进行结果的分割，如 **结果1｜结果2** ，`resp` 中 **{{index . 0}}** 和 **{{index .1}}**，是固定的模版写法，前者会被**结果1**填充，后者会被**结果2**填充。
 
