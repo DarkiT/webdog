@@ -2,7 +2,10 @@ language: go
 go:
 - 1.14.x
 env:
+  matrix:
   - GO111MODULE=on
+  global:
+    secure: Gtd76ox+Wl3u7SzJn4RWWQ6dvHv7HMZ/yFlBvM0O1hHW/fpSdICz0XrDZKoBa4CMHzpW11e1WiGoui5MGcpUJWkhaikUlTzQ/YKhp3Ig0hen+H9Drn6scpFkqcxpxMJy9vzfwV5l9kRzrN5pyhWBY9wCUXtUFAaGKplvMx4kgrixgFwzzPkq27r+bShuBcIQsOyEjdxaELa+bl4Vj5/j1YxjFWeSw1dvB82K7zq46Ubqt3leUs7TWjcA0rzlOk205Z3NcdTPfJ3Hfpe+sdvHSbV4J0VyBElR81wujnirryRwcOMzThwhIz/AnRWuy01S4UOYTCGa7oBuHxWhkPxRTyh+n5ylxZCzmVR8xzluD/+a+IFlqZ5k7cHZTx86fXbULVXPy1VjKxiu92NND+Xaajc3Bw/3e2N/1OW7HNV46dPNfKp2588mc7iv4k3FNl9J3LjPs7rxKuLesTnLdSotylAqyPdgaLzYHAQaBXA6tJSd65XRMRSN3HMARAFQWCKFchcVZ9KkbBPISVayySXU1CVQoBpdikAyFedKGjPi9VjJSGxaUVjl5SggmrGyGa5EbthIk3M1NnhbvRflq8J6oQRNWceB3SarBW398secQU75baLH2a3BAQTB2vJ+rkAz+PWP3XQ/Y0lCGOGutSTw/K8CSh4xdUNZJ+HT/CNTQrY=
 install:
 - go get -v
 before_deploy: make build-all
