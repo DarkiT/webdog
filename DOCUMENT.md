@@ -37,7 +37,7 @@ user's request and parameters will be forwarded via webdog to the script configu
 
 webdog will pass the parameters of the GET request and the POST **PostForm** data to the configuration script as **getopt** long parameters and expects the script to respond with the content configured in the `resp` field
 
-In the reference configuration, if you request '/getInfo?name=callous&pass=123456', the script that webdog finally gets the response is 'sh. /resource/resp.sh --name=callous --pass=123456'
+In the reference configuration, if you request `/getInfo?name=callous&pass=123456`, the script that webdog finally gets the response is `sh. /resource/resp.sh --name=callous --pass=123456`
 
 The script must split the results according to the character of `split` when returning the results, such as **result 1｜result 2** , **{{index . 0}}** and **{{index .1}}** are fixed templates, the former will be filled by **result 1** and the latter will be filled by **result 2**.
 
