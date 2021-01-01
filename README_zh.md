@@ -5,7 +5,7 @@ webdog 是一个自定义的轻量 web 服务程序，他允许我们通过 yaml
 
 ## 安装
 ### 执行文件下载
-去 [releases](https://github.com/edboffical/releases) 下载对应操作系统的可执行文件
+去 [releases](https://github.com/edboffical/webdog/releases/) 下载对应操作系统的可执行文件
 ### 源码编译
 ```bash
 git clone https://github.com/edboffical/webdog

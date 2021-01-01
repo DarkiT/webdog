@@ -5,7 +5,7 @@ Webdog is a lightweight and customizable web service. It allows us to configure 
 
 ## Installation
 ### Download Releases
-Chick here [releases](https://github.com/edboffical/releases) to download the executable file corressponding to your system
+Chick here [releases](https://github.com/edboffical/webdog/releases/) to download the executable file corressponding to your system
 ### Building
 ```bash
 git clone https://github.com/edboffical/webdog
