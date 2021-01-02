@@ -3,11 +3,11 @@
 # Webdog - Lightweight and customizable web service
 
 ## What is webdog？
-Webdog is a lightweight and customizable web service. It allows us to configure routes via yaml, implement controllers externally.You can implement an external controller in any language like bash, lua, python ... It can also be a simple static resources web service.
+Webdog is a lightweight and customizable web service. It allows us to configure routes via yaml, implement controllers externally. You can implement an external controller in any language like bash, lua, python ... It can also be a simple static resources web service.
 
 ## Installation
 ### Download Releases
-Click here [releases](https://github.com/edboffical/webdog/releases/) to download the executable file corressponding to your system
+Click here [releases](https://github.com/edboffical/webdog/releases/) to download the executable file corresponding to your system
 ### Building
 ```bash
 git clone https://github.com/edboffical/webdog
