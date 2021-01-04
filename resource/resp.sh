@@ -4,4 +4,4 @@
 os=$(uname)
 who=$(whoami)
 resp="$os|$who"
-echo $resp
+echo -n $resp
